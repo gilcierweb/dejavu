@@ -14,7 +14,7 @@ def parse_requirements(requirements):
         return reqs
 
 
-PACKAGE_NAME = "DejavuGil"
+PACKAGE_NAME = "Dejavu"
 PACKAGE_VERSION = "0.0.1"
 SUMMARY = 'Dejavu: Audio Fingerprinting in Python'
 DESCRIPTION = """
