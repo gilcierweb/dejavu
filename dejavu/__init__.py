@@ -131,6 +131,7 @@ class Dejavu:
         song_name = song_name or song_name_from_path
         # don't refingerprint already fingerprinted files
         if song_hash in self.songhashes_set:
+            print('')
             # print(f"{song_name} already fingerprinted, continuing...")
         else:
             song_name, hashes, file_hash = Dejavu._fingerprint_worker(
