@@ -61,7 +61,7 @@ if __name__ == '__main__':
         if len(args.fingerprint) == 2:
             directory = args.fingerprint[0]
             extension = args.fingerprint[1]
-            print(f"Fingerprinting all .{extension} files in the {directory} directory")
+            # print(f"Fingerprinting all .{extension} files in the {directory} directory")
             djv.fingerprint_directory(directory, ["." + extension], 4)
 
         elif len(args.fingerprint) == 1:
