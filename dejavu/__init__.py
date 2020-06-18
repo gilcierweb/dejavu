@@ -85,7 +85,7 @@ class Dejavu:
         for filename, _ in decoder.find_files(path, extensions):
             # don't refingerprint already fingerprinted files
             if decoder.unique_hash(filename) in self.songhashes_set:
-                print(f"{filename} already fingerprinted, continuing...")
+                # print(f"{filename} already fingerprinted, continuing...")
                 continue
 
             filenames_to_fingerprint.append(filename)
@@ -131,7 +131,7 @@ class Dejavu:
         song_name = song_name or song_name_from_path
         # don't refingerprint already fingerprinted files
         if song_hash in self.songhashes_set:
-            print(f"{song_name} already fingerprinted, continuing...")
+            # print(f"{song_name} already fingerprinted, continuing...")
         else:
             song_name, hashes, file_hash = Dejavu._fingerprint_worker(
                 file_path,
